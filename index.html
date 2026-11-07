@@ -17,9 +17,14 @@
     </main>
     <div class="hint">move gently</div>
     <audio id="background-music" src="musica.mp3" loop preload="auto"></audio>
-    <button class="music-control" id="music-control" type="button" aria-label="Reproducir música" aria-pressed="false">
-      <span aria-hidden="true">♪</span> <span id="music-label">Reproducir música</span>
-    </button>
+    <div class="music-controls">
+      <button class="music-control" id="music-control" type="button" aria-label="Reproducir música" aria-pressed="false">
+        <span aria-hidden="true">♪</span> <span id="music-label">Reproducir música</span>
+      </button>
+      <button class="music-control" id="next-track-control" type="button" aria-label="Siguiente canción">
+        <span aria-hidden="true">⏭</span> Siguiente
+      </button>
+    </div>
     <script src="music.js"></script>
     <canvas id="garden"></canvas>
     <script type="importmap">
